@@ -13,3 +13,13 @@
 - 学生报数时，如果所报数字是3的倍数，那么不能说该数字，而要说Fizz；如果所报数字是5的倍数，那么要说Buzz；如果所报数字是第7的倍数，那么要说Whizz。
 
 - 学生报数时，如果所报数字同时是两个特殊数的倍数情况下，也要特殊处理，比如3和5的倍数，那么不能说该数字，而是要说FizzBuzz, 以此类推。如果同时是三个特殊数的倍数，那么要说FizzBuzzWhizz。
+
+## Tasking
+given 学生 when 报数 then 报出对应数字
+given 3的倍数的学生 when 报数 then 不报数字报Fizz
+given 5的倍数的学生 when 报数 then 不报数字报Buzz
+given 7的倍数的学生 when 报数 then 不报数字报Whizz
+given 3和5的倍数的学生 when 报数 then 不报数字报FizzBuzz
+given 3和7的倍数的学生 when 报数 then 不报数字报FizzWhizz
+given 5和7的倍数的学生 when 报数 then 不报数字报BuzzWhizz
+given 3和5和7的倍数的学生 when 报数 then 不报数字报FizzBuzzWhizz
