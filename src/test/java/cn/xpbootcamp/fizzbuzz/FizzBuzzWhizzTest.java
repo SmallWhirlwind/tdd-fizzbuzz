@@ -30,4 +30,13 @@ public class FizzBuzzWhizzTest {
 
         Assertions.assertThat(actualValue).isEqualTo("Buzz");
     }
+
+    @Test
+    void should_return_Whizz_given_a_number_is_7multiple_when_report_number() {
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        String actualValue = fizzBuzzWhizz.reportNumber(7);
+
+        Assertions.assertThat(actualValue).isEqualTo("Whizz");
+    }
 }
