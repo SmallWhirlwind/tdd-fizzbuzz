@@ -2,27 +2,16 @@ package cn.xpbootcamp.fizzbuzz;
 
 public class FizzBuzzWhizz {
     public String reportNumber(int number) {
-        if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
-            return "FizzBuzzWhizz";
-        }
-        if (number % 5 == 0 && number % 7 == 0) {
-            return "BuzzWhizz";
-        }
-        if (number % 3 == 0 && number % 7 == 0) {
-            return "FizzWhizz";
-        }
-        if (number % 3 == 0 && number % 5 == 0) {
-            return "FizzBuzz";
-        }
+        StringBuilder reportNumber = new StringBuilder();
         if (number % 3 == 0) {
-            return "Fizz";
+            reportNumber.append("Fizz");
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            reportNumber.append("Buzz");
         }
         if (number % 7 == 0) {
-            return "Whizz";
+            reportNumber.append("Whizz");
         }
-        return String.valueOf(number);
+        return reportNumber.length() > 0 ? reportNumber.toString() : String.valueOf(number);
     }
 }
